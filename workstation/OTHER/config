@@ -1,0 +1,144 @@
+Host api.ipma.pt api 192.168.150.35
+	HostName 192.168.150.35
+	User root
+	HostKeyAlgorithms ssh-rsa
+	PubkeyAcceptedKeyTypes ssh-rsa 
+
+
+Host 192.168.150.38
+	HostName 192.168.150.38
+	User root
+	HostKeyAlgorithms ssh-rsa
+	PubkeyAcceptedKeyTypes ssh-rsa
+
+Host torre v54p104.ipma.pt 192.168.54.104
+	Hostname 192.168.54.104
+	User castanho
+    
+Host apps apps-divca.ipma.pt
+	Hostname 192.168.156.47
+	User root
+
+Host dev servicesprocessor 
+	Hostname 192.168.150.53
+	User root
+    
+Host 192.168.150.58 workplace workplace.ipma.pt 
+    HostName 192.168.150.58
+    User root
+    VisualHostKey yes
+
+Host 192.168.150.65 celsius celsius.ipma.pt 
+    HostName 192.168.150.65
+    User root
+
+Host git 192.168.150.59 git.ipma.pt 
+    HostName 192.168.150.59
+    User root
+
+Host 192.168.150.20 db 
+    HostName 192.168.150.20
+    User root
+
+Host 192.168.150.56 maps maps.ipma.pt 
+    HostName 192.168.150.56
+    User root
+    HostKeyAlgorithms ssh-rsa
+	PubkeyAcceptedKeyTypes ssh-rsa 
+
+
+Host 192.168.150.57 scripts 
+    HostName 192.168.150.57
+    User root
+    HostKeyAlgorithms ssh-rsa
+    PubkeyAcceptedKeyTypes ssh-rsa 
+
+Host 192.168.150.112 filestore 
+    HostName 192.168.150.112
+    User root
+    
+
+Host 192.168.156.37 reanalysis 
+    HostName 192.168.156.37
+    User root
+
+Host 192.168.150.113 mapservices  
+    HostName 192.168.150.113
+    User root
+
+Host 192.168.150.200 chimera chimera.ipma.pt 
+    HostName 192.168.150.200
+    User root
+
+Host 192.168.52.62 cats cats.ipma.pt 
+    HostName 192.168.52.62
+    User root
+
+Host 193.137.20.18 dea dea.ipma.pt 
+	HostName 193.137.20.18
+	User root
+
+Host tlp 
+	HostName 192.168.52.20
+	User vops
+
+
+Host ipmadmg 192.168.150.223
+	HostName 192.168.150.223
+	User root
+	HostKeyAlgorithms ssh-rsa
+	PubkeyAcceptedKeyTypes ssh-rsa 
+
+Host 192.168.150.54 mf2-in
+    HostName 192.168.150.54
+    User root
+
+Host 192.168.150.148 mf2-ext
+    HostName 192.168.150.148
+    User root
+
+
+Host 192.168.150.17 lb
+    HostName 192.168.150.17
+    User root
+
+
+Host 192.168.150.144 apps2 divcawebapps
+	HostName 192.168.150.144
+	User salpico
+
+Host 192.168.150.143 eida
+	HostName 192.168.150.143
+	User sysop
+
+Host 94.46.171.201 slidein
+	Hostname 94.46.171.201
+	User root
+
+
+Host climaA climalab
+    HostName 192.168.156.177
+    User root
+
+Host climaB
+    HostName 192.168.156.178
+    User salpico
+
+Host 192.168.156.21 airprod-divca airprod
+	HostName 192.168.156.21
+	User salpico
+	RequestTTY force
+	RemoteCommand cd /pstorage && bash -i
+
+Host 192.168.156.23 prodproc1-divca prodproc1
+	HostName 192.168.156.23
+	User salpico
+
+Host 192.168.156.24  cs climateservices
+	HostName 192.168.156.24
+	User salpico
+
+Host 192.168.156.44 cs_helper 
+	HostName 192.168.156.44
+	User salpico
+

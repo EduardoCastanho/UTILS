@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Panoply
+GenericName=Panoply Nasa
+Icon=/opt/PanoplyJ/panoply.png
+TryExec=panoply
+Exec=panoply %F
+Terminal=false
+StartupNotify=false
+Categories=Qt;Education;Science;Geography;
+MimeType=application/netcdf
+Keywords=map;globe;postgis;wms;wfs;ogc;osgeo;
+X-Desktop-File-Install-Version=0.27
