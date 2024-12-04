@@ -62,10 +62,11 @@ export default tseslint.config(
       'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
       'no-unused-vars': 'off',
       'sort-keys': 'off',
-      'no-magic-numbers':'off',
+      'no-magic-numbers': 'off',
       'no-inline-comments': 'off',
+      'promise/always-return': ['error', { ignoreLastCallback: true }],
       'max-lines-per-function': ['error', { max: 200, skipBlankLines: true, skipComments: true }],
-      'max-statements': ['error',20, { ignoreTopLevelFunctions:true }],
+      'max-statements': ['error', 20, { ignoreTopLevelFunctions: true }],
       camelcase: ['error', { ignoreImports: false }],
 
       'react/jsx-uses-react': 'off',
@@ -80,6 +81,14 @@ export default tseslint.config(
       'react/jsx-no-literals': 'off',
       'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
       'react/jsx-one-expression-per-line': ['warn', { allow: 'non-jsx' }],
+      'react/forbid-component-props': 'off',
+      'react/jsx-props-no-spreading': 'off',
+      'react/jsx-no-bind': [
+        'warn',
+        {
+          allowArrowFunctions: true,
+        },
+      ],
 
       '@typescript-eslint/restrict-template-expressions': ['error', { allow: [{ from: 'lib', name: 'process' }] }],
       '@typescript-eslint/no-unused-vars': 'warn',
@@ -87,8 +96,10 @@ export default tseslint.config(
       'unicorn/filename-case': [
         'error',
         {
-          case: 'pascalCase',
-          ignore: ['page.tsx', 'layout.tsx', 'loading.tsx'],
+          cases: {
+            camelCase: true,
+            pascalCase: true,
+          },
         },
       ],
 
@@ -136,6 +147,8 @@ export default tseslint.config(
           propertyValue: 'ignore',
         },
       ],
+      '@stylistic/brace-style': ['warn', '1tbs'],
+      '@stylistic/arrow-parens': ['warn', 'always'],
     },
   },
 );
